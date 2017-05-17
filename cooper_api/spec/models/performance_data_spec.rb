@@ -6,7 +6,7 @@ RSpec.describe PerformanceData, type: :model do
     it { is_expected.to have_db_column :data}
   end
 
-  describe.'Relations' do
+  describe 'Relations' do
     it { is_expected.to belong_to :user }
   end
 end

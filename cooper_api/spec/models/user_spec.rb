@@ -37,8 +37,7 @@ RSpec.describe User, type: :model do
               'asdf@example', 'ddd@.d. .d', 'ddd@.d']
 
     emails.each do |email|
-      it { is_expected.not_to allow_value(email).for
-        (:email) }
+      it { is_expected.not_to allow_value(email).for(:email) }
     end
   end
 
@@ -55,7 +54,7 @@ RSpec.describe User, type: :model do
   end
 
   end
-  
+
   describe 'Relations' do
     it { is_expected.to have_many :performance_data }
   end
